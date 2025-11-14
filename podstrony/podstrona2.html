@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ksawery Wilczyński">
+    <title>jednostki względne</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <h3 style="text-align: left;"> <a href="../index.html"><----- powrót do strony głownej</a> </h3>
+    <h1>Jednostki względne</h1>
+
+<p>
+Jednostki względne w CSS są kluczowe do tworzenia responsywnych i elastycznych layoutów stron.
+Ich główną zaletą jest zdolność do skalowania się w zależności od kontekstu — wielkości fontu rodzica,
+rozmiarów okna przeglądarki czy innych elementów na stronie. Dzięki temu elementy na stronie adaptują się płynnie do różnych rozdzielczości i
+ustawień użytkownika, co poprawia dostępność i wygodę korzystania ze strony.
+</p>
+<h2>Jednostki względne wspierają:</h2>
+<ul>
+    <li>Responsywność: Pozwalają na tworzenie układów, które dostosowują się do różnych rozmiarów ekranów i urządzeń.</li>
+    <li>Dostępność: Umożliwiają użytkownikom łatwiejsze skalowanie tekstu i elementów interfejsu zgodnie z ich potrzebami.</li>
+    <li>Elastyczność projektowania: Ułatwiają tworzenie spójnych i proporcjonalnych układów bez konieczności stosowania sztywnych wartości.</li>
+</ul>
+<h2>Popularne jednostki względne w CSS: </h2>
+
+
+
+
+
+    <table>
+    
+    <tr><th>Jednostka</th><th>Odniesienie</th><th>Opis</th></tr>
+    <tr><td>em</td>   <td>Rozmiar czcionki elementu nadrzędnego</td>   <td>1em to aktualny rozmiar czcionki danego elementu. Stosowanie zagnieżdżone „em” sprawia, że zależą one kaskadowo od wielkości fontu rodzica</td></tr>
+    <tr><td>rem</td>   <td>Rozmiar czcionki elementu root</td>   <td>rem odnosi się do rozmiaru fontu korzenia dokumentu (html). Ułatwia spójne skalowanie bez efektu zagnieżdżenia jak w „em”</td></tr>
+    <tr><td>%</td>   <td>Wartość rodzica</td>   <td>Wartość procentowa; np. width: 50% oznacza połowę szerokości elementu nadrzędnego</td></tr>
+    <tr><td>vw</td>   <td>Szerokość widoku</td>   <td>1vw to 1% szerokości okna przeglądarki (viewport width)</td></tr>
+    <tr><td>vh</td>   <td>Wysokość widoku	</td>   <td>1vh to 1% wysokości okna przeglądarki (viewport height)</td></tr>
+    <tr><td>vmin</td>   <td>Mniejszy wymiar widoku</td>   <td>1vmin to 1% z mniejszego wymiaru okna: szerokość lub wysokość</td></tr>
+    <tr><td>vmax</td>   <td>Większy wymiar widoku</td>   <td>1vmax to 1% z większego wymiaru okna: szerokość lub wysokość</td></tr>
+    <tr><td>ch</td>   <td>Szerokość znaku „0”</td>   <td>1ch to szerokość cyfry „0” aktualnego fontu; przydatne do pól tekstowych</td></tr>
+    <tr><td>ex</td>   <td>Wysokość litery „x”	</td>   <td>1ex to wysokość małej litery „x” aktualnego fontu; rzadziej używana niż em/rem</td></tr>
+    <tr><td>vi</td>   <td>Długość inline okna (nowe CSS)	</td>   <td>Oparta o główną oś innego trybu pisma lub inline axis; coraz częściej w wersjach nowoczesnych przeglądarek</td></tr>
+    <tr><td>vb</td>   <td>Długość block okna (nowe CSS)</td>   <td>Oparta o główną oś block axis – czyli np. dla języków pisanych pionowo/horyzontalnie</td></tr>
+    </table>
+    <h2>
+Opisy kluczowych jednostek
+</h2>
+<p>
+    <ul>
+        <li>em: Dobrze sprawdza się przy elementach zależnych od wielkości tekstu, np. padding, margins font-size.</li>
+        <li>rem: Najlepszy, gdy chcesz trzymać spójność w całym projekcie i mieć totalną kontrolę nad skalowaniem tekstów na stronie.</li>
+        <li>%: Uniwersalna i bardzo elastyczna. Używana przy szerokościach, wysokościach, paddingu czy marginach – zawsze liczy się względem rodzica.</li>
+        <li>vw, vh, vmin, vmax: Pozwalają na dynamiczne skalowanie do wymiarów okna niezależnie od zawartości strony. Są kluczowe w nowoczesnym responsive design.</li>
+        <li>ch, ex: Zastosowania typograficzne i poligonowe np. określanie szerokości inputów czy precyzyjna typografia.</li>
+    </ul>
+</p>
+<h2>Wskazówki do użycia</h2>
+<ul>
+    <li>Responsywność i dostępność: Jednostki względne ułatwiają dopasowanie stron do różnych ekranów, a także poprawiają dostępność (np. gdy użytkownik powiększa tekst).</li>
+    <li>Unikaj mieszania em z rem do font-size w tym samym miejscu – łatwo wtedy o nieoczekiwane efekty kaskadowe.</li>
+    <li>Nowoczesne jednostki jak vi i vb powoli zyskują wsparcie i są kluczowe np. dla języków pionowych.</li>
+</ul>
+
+  
+</table>
+</body>
+</html>
